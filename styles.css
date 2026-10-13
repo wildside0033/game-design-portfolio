@@ -64,6 +64,11 @@ h1 span { color:var(--teal); }
 #monster-ball .case-cover img { object-fit:contain; background:#080e18; }
 #lotus .case-cover img { object-position:center 57%; }
 #mist .case-cover img { object-position:center 40%; }
+.case-video { margin:26px 0 30px; }
+.case-video-heading { display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:10px; }
+.case-video-heading h3 { margin:0; font-size:16px; }
+.case-video-heading span { color:var(--muted); font-size:13px; }
+.case-video video { display:block; width:100%; max-height:70vh; aspect-ratio:16/9; object-fit:contain; background:#101719; }
 .case-body { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; margin-block:29px 32px; }
 .case-body > div { border-top:2px solid var(--teal); padding-top:11px; }
 .case-body h3 { margin:0 0 7px; font-size:16px; }
@@ -144,6 +149,8 @@ body:has(.drawer[open]) { overflow:hidden; }
   .case-lead { font-size:17px; }
   .case-facts { text-align:left; margin-top:14px; }
   .case-cover img { aspect-ratio:16/10; }
+  .case-video { margin:20px 0 23px; }
+  .case-video video { max-height:60vh; }
   .case-body { grid-template-columns:1fr; gap:21px; }
   .image-pair { grid-template-columns:1fr; gap:20px; }
   .about { grid-template-columns:1fr; gap:18px; padding-block:62px; }
