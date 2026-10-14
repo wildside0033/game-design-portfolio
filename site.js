@@ -4,6 +4,15 @@ const kicker = document.querySelector('#drawer-kicker');
 const cards = [...document.querySelectorAll('[data-project]')];
 const ids = cards.map((card) => card.dataset.project);
 
+document.querySelectorAll('.case-video').forEach((player) => {
+  const video = player.querySelector('video');
+  const poster = player.querySelector('.case-video-poster');
+  poster?.addEventListener('click', () => {
+    player.classList.add('is-active');
+    video.play().catch(() => player.classList.remove('is-active'));
+  });
+});
+
 function element(tag, className, text) {
   const node = document.createElement(tag);
   if (className) node.className = className;
